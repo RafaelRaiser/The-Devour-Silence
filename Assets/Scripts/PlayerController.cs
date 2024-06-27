@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float lookSensitivity = 2f;
     public float slowSpeed = 2f;
     public float gravity = -9.81f;
+    CanvasActivator canvasActivator;
 
     public float minVerticalAngle = -90f;
     public float maxVerticalAngle = 90f;
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
         characterController = GetComponent<CharacterController>();
         cameraTransform = Camera.main.transform;
+        canvasActivator= GameObject.Find("Canvas").GetComponent<CanvasActivator>();
     }
 
     void Update()
@@ -36,7 +38,10 @@ public class PlayerController : MonoBehaviour
 
         Vector3 move = transform.right * moveSide + transform.forward * moveForward;
         characterController.Move(move * Time.deltaTime);
-
+        if(move == Vector3.zero)
+        {
+           canvasActivator.HideCanvas();
+        }
         // Controle de Visão
         float mouseX = Input.GetAxis("Mouse X") * lookSensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * lookSensitivity;
@@ -56,5 +61,6 @@ public class PlayerController : MonoBehaviour
         }
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);
+       
     }
 }
