@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1904
     height: 973
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 25
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 18
+  controlID: 26
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,8 +191,8 @@ MonoBehaviour:
     y: 395
     width: 898
     height: 528
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 84
+  controlID: 72
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -401,8 +401,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
-    m_VSlider: 1
+    m_HSlider: 0
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -415,18 +415,18 @@ MonoBehaviour:
       y: 21
       width: 897
       height: 486
-    m_Scale: {x: 1.3876851, y: 1.3876851}
-    m_Translation: {x: 503.41464, y: 294.6653}
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 448.5, y: 243}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -362.77298
-      y: -212.34308
-      width: 646.40027
-      height: 350.22357
+      x: -448.5
+      y: -243
+      width: 897
+      height: 486
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 897, y: 507}
@@ -765,9 +765,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 42.758625, y: 5.1101646, z: 5.4150925}
+    m_Target: {x: 36.054382, y: -2.1573248, z: 21.766317}
     speed: 2
-    m_Value: {x: 42.758625, y: 5.1101646, z: 5.4150925}
+    m_Value: {x: 36.054382, y: -2.1573248, z: 21.766317}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -813,20 +813,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.0013312977, y: 0.9982876, z: 0.02214856, w: -0.05578192}
+    m_Target: {x: -0.040190727, y: -0.954326, z: 0.14888346, w: -0.25635076}
     speed: 2
-    m_Value: {x: 0.0012475401, y: 0.99822885, z: 0.020649223, w: -0.05577877}
+    m_Value: {x: -0.040186, y: -0.9542137, z: 0.14886595, w: -0.2563206}
   m_Size:
-    m_Target: 13.799905
+    m_Target: 7.7421107
     speed: 2
-    m_Value: 13.799905
+    m_Value: 7.7421107
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.3433006
-    m_SpeedNormalized: 0.6700003
+    m_Speed: 2
+    m_SpeedNormalized: 1
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -837,7 +837,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.0022506411, y: 0.99773794, z: 0.041619286, w: -0.053941317}
+  m_LastSceneViewRotation: {x: 0.118388295, y: -0.560493, z: 0.081674024, w: 0.8157149}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -986,7 +986,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -994,15 +994,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Adventure_Character
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\rafael.raiser\Documents\The Devour Silence\The-Devour-Silence
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: c6590000
-    m_LastClickedID: 22982
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d2590000
+    m_LastClickedID: 22994
     m_ExpandedIDs: 00000000c659000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1058,8 +1058,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 000000004a870000a2890000c2640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
